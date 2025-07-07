@@ -1,4 +1,4 @@
-🎯 ## Introducción a la Aplicación Interactiva en Streamlit
+🎯 Introducción a la Aplicación Interactiva en Streamlit
 
 Con estos ejercicios hemos desarrollado una serie de aplicaciones interactivas utilizando Streamlit, una herramienta que nos permite construir interfaces visuales rápidas y efectivas en Python. Cada ejercicio tiene como objetivo explorar y visualizar datos reales, fomentando la comprensión de análisis exploratorio de datos (EDA) y fortaleciendo habilidades de visualización geográfica y estadística. A continuación, se describen los tres ejercicios principales desarrollados:
 
