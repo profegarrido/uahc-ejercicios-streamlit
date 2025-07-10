@@ -102,7 +102,7 @@ fig = px.scatter_mapbox(
         "Latitude": False,            # No mostrar lat/lon en el tooltip
         "Longitude": False
     },
-    zoom=1,                          # Nivel de zoom inicial
+    zoom=0,                          # Nivel de zoom inicial
     height=600,
     mapbox_style="carto-positron",   # Estilo del mapa (puedes probar "open-street-map", "stamen-toner", etc.)
     size_max=30                      # Tamaño máximo de los puntos en el mapa
