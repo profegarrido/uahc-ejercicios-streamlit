@@ -6,6 +6,16 @@ import re
 import plotly.express as px
 import numpy as np
 
+# Ocultar menú de Streamlit (íconos, menú superior y pie de página)
+hide_streamlit_style = """
+        <style>
+        #MainMenu {visibility: hidden;}
+        footer {visibility: hidden;}
+        header {visibility: hidden;}
+        </style>
+        """
+st.markdown(hide_streamlit_style, unsafe_allow_html=True)
+
 def extraer_pais(texto):
     match = re.match(r'^([^:]+)', texto)
     return match.group(1).strip() if match else texto
