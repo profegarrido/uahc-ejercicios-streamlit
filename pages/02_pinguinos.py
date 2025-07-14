@@ -5,6 +5,16 @@ from io import StringIO
 import matplotlib.pyplot as plt
 import seaborn as sns
 
+# Ocultar menú de Streamlit (íconos, menú superior y pie de página)
+hide_streamlit_style = """
+        <style>
+        #MainMenu {visibility: hidden;}
+        footer {visibility: hidden;}
+        header {visibility: hidden;}
+        </style>
+        """
+st.markdown(hide_streamlit_style, unsafe_allow_html=True)
+
 def leer_csv_desde_url(url, sep=',', encoding='utf-8'):
     try:
         response = requests.get(url)
