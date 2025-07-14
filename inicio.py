@@ -1,12 +1,15 @@
 
 import streamlit as st
 
-hide_github_icon = """
-#GithubIcon {
-  visibility: hidden;
-}
-"""
-st.markdown(hide_github_icon, unsafe_allow_html=True)
+# Ocultar menú de Streamlit (íconos, menú superior y pie de página)
+hide_streamlit_style = """
+        <style>
+        #MainMenu {visibility: hidden;}
+        footer {visibility: hidden;}
+        header {visibility: hidden;}
+        </style>
+        """
+st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 
 
 intro = """🎯 **Introducción a la Aplicación Interactiva en Streamlit**
