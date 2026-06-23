@@ -45,6 +45,14 @@ def leer_csv_desde_url(url, sep=',', encoding='utf-8'):
 url = "https://drive.google.com/uc?export=download&id=1UyX7sRATSNbadNxUZ7AAmbeOUm7sVpGF"
 df = leer_csv_desde_url(url)
 #df['mag'] = df['Magnitude'] ** 2
+csv = df.to_csv(index=False).encode('utf-8')
+
+st.sidebar.download_button(
+    label="Descargar dataset",
+    data=csv,
+    file_name='terremotos.csv',
+    mime='text/csv',
+)
 
 
 opciones = ['Magnitud','Daños','Muertes']
