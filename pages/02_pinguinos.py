@@ -37,6 +37,15 @@ def leer_csv_desde_url(url, sep=',', encoding='utf-8'):
 url = "https://drive.google.com/uc?export=download&id=1hExWRWNZZlpkgo8W2r90qkGh8Oc9MRiH"
 df = leer_csv_desde_url(url)
 
+csv = df.to_csv(index=False).encode('utf-8')
+
+st.sidebar.download_button(
+    label="Descargar dataset",
+    data=csv,
+    file_name='pinguinos.csv',
+    mime='text/csv',
+)
+
 st.header("Gráfico Culmen Length / Flipper Length")
 
 especie = st.sidebar.radio(

@@ -34,6 +34,14 @@ def leer_csv_desde_url(url, sep=',', encoding='utf-8'):
 url = "https://raw.githubusercontent.com/lgarridocornejo/uacademia/refs/heads/master/modulo_03/concap.csv"
 df = leer_csv_desde_url(url)
 
+csv = df.to_csv(index=False).encode('utf-8')
+
+st.sidebar.download_button(
+    label="Descargar dataset",
+    data=csv,
+    file_name='capitales.csv',
+    mime='text/csv',
+)
 
 continentes = sorted(list(df["ContinentName"].unique()))
 continente = st.sidebar.selectbox('Seleccionar Continente:',continentes)
