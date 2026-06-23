@@ -36,7 +36,7 @@ En esta sección se analizan el TOP de los terremotos más importantes registrad
 
 Luego, se selecciona cuántos registros visualizar (del top 1 al 100), y se muestra un mapa georreferenciado con los eventos seleccionados. Esto permite comprender mejor la distribución y el impacto global de los grandes sismos."""
 
-pokemones = """# 🔍 Explorador Estratégico de Pokémon
+pokemones = """4. 🔍 Explorador Estratégico de Pokémon
 
 ¡Bienvenido al asistente definitivo para entrenadores! Esta herramienta te permite profundizar en el potencial competitivo de cada Pokémon. 
 
