@@ -36,9 +36,18 @@ En esta sección se analizan el TOP de los terremotos más importantes registrad
 
 Luego, se selecciona cuántos registros visualizar (del top 1 al 100), y se muestra un mapa georreferenciado con los eventos seleccionados. Esto permite comprender mejor la distribución y el impacto global de los grandes sismos."""
 
+pokemones = """# 🔍 Explorador Estratégico de Pokémon
+
+¡Bienvenido al asistente definitivo para entrenadores! Esta herramienta te permite profundizar en el potencial competitivo de cada Pokémon. 
+
+### ¿Cómo funciona?
+1. **Selección Dinámica:** Filtra tu búsqueda por **Tipo y Subtipo** para encontrar rápidamente a los compañeros ideales para tu equipo.
+2. **Análisis de Estadísticas:** Visualiza al instante el rendimiento base de **Ataque, Defensa y Stamina** de cada Pokémon.
+3. **Comparativa Inteligente:** Entiende cómo se posiciona tu Pokémon frente al promedio de la Pokédex. ¿Es un titán en defensa o un experto en ataque? Los gráficos integrados te muestran exactamente dónde destaca cada criatura.
+"""
 
 st.markdown(intro)
 st.markdown(capitales)
 st.markdown(pinguinos)
 st.markdown(terremotos)
-#st.markdown(pokemon)
+st.markdown(pokemones)
