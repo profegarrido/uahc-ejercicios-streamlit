@@ -1,6 +1,8 @@
 
 import streamlit as st
 
+st.set_page_config(layout="wide")
+
 # Ocultar menú de Streamlit (íconos, menú superior y pie de página)
 hide_streamlit_style = """
         <style>
@@ -40,7 +42,7 @@ pokemones = """4. 🔍 Explorador Estratégico de Pokémon
 
 ¡Bienvenido al asistente definitivo para entrenadores! Esta herramienta te permite profundizar en el potencial competitivo de cada Pokémon. 
 
-### ¿Cómo funciona?
+#### ¿Cómo funciona?
 1. **Selección Dinámica:** Filtra tu búsqueda por **Tipo y Subtipo** para encontrar rápidamente a los compañeros ideales para tu equipo.
 2. **Análisis de Estadísticas:** Visualiza al instante el rendimiento base de **Ataque, Defensa y Stamina** de cada Pokémon.
 3. **Comparativa Inteligente:** Entiende cómo se posiciona tu Pokémon frente al promedio de la Pokédex. ¿Es un titán en defensa o un experto en ataque? Los gráficos integrados te muestran exactamente dónde destaca cada criatura.
